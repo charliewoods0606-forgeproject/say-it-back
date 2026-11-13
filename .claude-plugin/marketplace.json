@@ -1,0 +1,14 @@
+{
+  "name": "say-it-back",
+  "owner": {
+    "name": "Charlie Woods"
+  },
+  "description": "say-it-back: Claude plays back your long dictated messages and waits for your yes.",
+  "plugins": [
+    {
+      "name": "say-it-back",
+      "source": "./",
+      "description": "After a long dictated message, Claude plays it back in four lines (asking, decided, not sure yet, changed) and waits for your yes before doing any work. Confirmed playbacks are saved as a dated record of what you meant."
+    }
+  ]
+}

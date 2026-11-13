@@ -1,0 +1,32 @@
+{
+  "name": "say-it-back",
+  "version": "0.1.0",
+  "description": "After a long dictated message, Claude plays it back in four lines (asking, decided, not sure yet, changed) and waits for your yes before doing any work. Confirmed playbacks are saved as a dated record of what you meant.",
+  "author": {
+    "name": "Charlie Woods",
+    "url": "https://github.com/charliewoods0606-forgeproject"
+  },
+  "repository": "https://github.com/charliewoods0606-forgeproject/say-it-back",
+  "license": "MIT",
+  "keywords": [
+    "voice",
+    "dictation",
+    "playback",
+    "confirm",
+    "wispr-flow"
+  ],
+  "userConfig": {
+    "min_words": {
+      "type": "number",
+      "title": "Words before a playback",
+      "description": "Messages at least this long get played back first.",
+      "default": 150
+    },
+    "log_folder": {
+      "type": "string",
+      "title": "Where confirmed playbacks are saved",
+      "description": "A folder; one Markdown file per month. ~ means your home folder.",
+      "default": "~/.claude/say-it-back"
+    }
+  }
+}
